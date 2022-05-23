@@ -1,0 +1,18 @@
+body{
+    background-color: azure;
+}
+
+.navbar{
+    background-color: cadetblue;
+}
+#card{
+    background-color: cadetblue;
+    height: 250px;
+}
+
+#mt-2{
+    margin-top: 25px;
+}
+#altbosluk{
+    margin-bottom: 50px;
+}

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>İşlemler</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/Footer-Clean.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="js.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-md">
+        <div class="container-fluid"><a class="navbar-brand" href="#">Mert Kaan Beg</a><button data-bs-toggle="collapse"
+                class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle
+                    navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Anasayfa</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="islem.html">İşlemler</a></li>
+                    <li class="nav-item"><a class="nav-link" href="iletisim.html">İletişim</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-5">
+                    <h1 class="text-center">And Kapısı</h1>
+                    <div class="row">
+                        <div id="card" class="col-12 offset-1">
+                            <label class="label">İlk Sayı</label>
+                            <input class="form-control" type="text" id="x" name="x">
+                            <label class="label">İkinci Sayı</label>
+                            <input class="form-control" type="text" id="y" name="y">
+                            <button type="button" id="btn" class="btn btn-danger" onclick="andgate()"
+                                value="1">Hesapla</button><br>
+                            <label id="frmlbl" class="label">Sonuç: <b id="and"></b></label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-5 offset-2">
+                    <h1 class="text-center">Or Kapısı</h1>
+                    <div class="row">
+                        <div id="card" class="col-12 offset-1">
+                            <label class="label">İlk Sayı</label>
+                            <input class="form-control" type="text" id="x1" name="x">
+                            <label class="label">İkinci Sayı</label>
+                            <input class="form-control" type="text" id="y1" name="y">
+                            <button type="button" id="btn" class="btn btn-danger" onclick="orgate()"
+                                value="1">Hesapla</button><br>
+                            <label id="frmlbl" class="label">Sonuç: <b id="or"></b></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-5">
+                    <h1 class="text-center">Bitwise And Kapısı</h1>
+                    <div class="row">
+                        <div id="card" class="col-12 offset-1">
+                            <label class="label">İlk Sayı</label>
+                            <input class="form-control" type="text" id="x2" name="x">
+                            <label class="label">İkinci Sayı</label>
+                            <input class="form-control" type="text" id="y2" name="y">
+                            <button type="button" id="btn" class="btn btn-danger" onclick="biandgate()"
+                                value="1">Hesapla</button><br>
+                            <label id="frmlbl" class="label">Sonuç: <b id="biandgate"></b></label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-5 offset-2">
+                    <h1 class="text-center">Bitwise Or Kapısı</h1>
+                    <div class="row">
+                        <div id="card" class="col-12 offset-1">
+                            <label class="label">İlk Sayı</label>
+                            <input class="form-control" type="text" id="x3" name="x">
+                            <label class="label">İkinci Sayı</label>
+                            <input class="form-control" type="text" id="y3" name="y">
+                            <button type="button" id="btn" class="btn btn-danger" onclick="biorgate()"
+                                value="1">Hesapla</button><br>
+                            <label id="frmlbl" class="label">Sonuç: <b id="biorgate"></b></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-5">
+                    <h1 class="text-center">Bitwise XOR Kapısı</h1>
+                    <div class="row">
+                        <div id="card" class="col-12 offset-1">
+                            <label class="label">İlk Sayı</label>
+                            <input class="form-control" type="text" id="x7" name="x">
+                            <label class="label">İkinci Sayı</label>
+                            <input class="form-control" type="text" id="y7" name="y">
+                            <button type="button" id="btn" class="btn btn-danger" onclick="biorgate()"
+                                value="1">Hesapla</button><br>
+                            <label id="frmlbl" class="label">Sonuç: <b id="bixorgate"></b></label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-5 offset-2">
+                    <h1 class="text-center">Left Shift</h1>
+                    <div class="row">
+                        <div id="card" class="col-12 offset-1">
+                            <label class="label">Sayı</label>
+                            <input class="form-control" type="text" id="x8" name="x">
+                            <button type="button" id="btn" class="btn btn-danger" onclick="leftshift()"
+                                value="1">Hesapla</button><br>
+                            <label id="frmlbl" class="label">Sonuç: <b id="leftshift"></b></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-5">
+                    <h1 class="text-center">Right Shift</h1>
+                    <div class="row">
+                        <div id="card" class="col-12 offset-1">
+                            <label class="label">Sayı</label>
+                            <input class="form-control" type="text" id="x9" name="x">
+                            <button type="button" id="btn" class="btn btn-danger" onclick="rightshift()"
+                                value="1">Hesapla</button><br>
+                            <label id="frmlbl" class="label">Sonuç: <b id="rightshift"></b></label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-5 offset-2">
+                    <h1 class="text-center">Unsigned Right Shift</h1>
+                    <div class="row">
+                        <div id="card" class="col-12 offset-1">
+                            <label class="label">Sayı</label>
+                            <input class="form-control" type="text" id="x10" name="x">
+                            <button type="button" id="btn" class="btn btn-danger" onclick="	unsignedrightshift()"
+                                value="1">Hesapla</button><br>
+                            <label id="frmlbl" class="label">Sonuç: <b id="unsignedrightshift"></b></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-5">
+            <div id="altbosluk" class="row">
+                <div class="col-5">
+                    <h1 class="text-center">Bitwise Not Kapısı</h1>
+                    <div class="row">
+                        <div id="card" class="col-12 offset-1">
+                            <label class="label">Sayı</label>
+                            <input class="form-control" type="text" id="x4" name="x">
+                            <button type="button" id="btn" class="btn btn-danger" onclick="notgate()"
+                                value="1">Hesapla</button><br>
+                            <label id="frmlbl" class="label">Sonuç: <b id="binotgate"></b></label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-5 offset-2">
+                    <h1 class="text-center">Kelime Birleştirme</h1>
+                    <div class="row">
+                        <div id="card" class="col-12 offset-1">
+                            <label class="label">İlk Kelime</label>
+                            <input class="form-control" type="text" id="x5" name="x">
+                            <label class="label">İkinci Kelime</label>
+                            <input class="form-control" type="text" id="y5" name="y">
+                            <button type="button" id="btn" class="btn btn-danger" onclick="Combining()"
+                                value="1">Birleştir</button><br>
+                            <label id="frmlbl" class="label">Sonuç: <b id="com"></b></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer id="py-4" class="text-center">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-lg-3">
+
+            </div>
+        </div>
+    </footer>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
